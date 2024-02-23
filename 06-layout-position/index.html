@@ -7,30 +7,78 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>TailwindCSS</title>
   </head>
-  <body>
+  <body class="flex flex-col w-screen justify-start items-center pb-16">
     <!-- Positioning -->
-
-    <!-- Top left corner -->
-
-    <!-- Top right corner -->
-
-    <!-- Bottom left corner -->
-
-    <!-- Bottom right corner -->
-
+    <div class="relative w-1/2 h-12 bg-red-300">
+      <p>parent element</p>
+      <div class="absolute bottom-0 right-0 bg-emerald-200">Absolute Child</div>
+    </div>
+    <div class="w-10/12 flex flex-row justify-evenly items-center">
+      <!-- Top left corner -->
+      <div class="relative w-32 h-32 mt-4 bg-yellow-400">
+        <div class="absolute top-0 left-0 bg-rose-400 h-12 w-12"></div>
+      </div>
+      <!-- Top right corner -->
+      <div class="relative w-32 h-32 mt-4 bg-yellow-400">
+        <div class="absolute top-0 right-0 bg-pink-400 h-12 w-12"></div>
+      </div>
+      <!-- Bottom left corner -->
+      <div class="relative w-32 h-32 mt-4 bg-yellow-400">
+        <div class="absolute bottom-0 left-0 bg-purple-400 h-12 w-12"></div>
+      </div>
+      <!-- Bottom right corner -->
+      <div class="relative w-32 h-32 mt-4 bg-yellow-400">
+        <div class="absolute bottom-0 right-0 bg-emerald-400 h-12 w-12"></div>
+      </div>
+    </div>
     <!-- Span top edge -->
-
+    <div class="relative w-32 h-32 mt-4 bg-yellow-400">
+      <div class="absolute inset-x-0 top-0 bg-emerald-400 h-12"></div>
+    </div>
     <!-- Span left edge -->
-
+    <div class="relative w-32 h-32 mt-4 bg-yellow-400">
+      <div class="absolute inset-y-0 left-0 bg-emerald-400 w-12"></div>
+    </div>
     <!-- Span right edge -->
-
+    <div class="relative w-32 h-32 mt-4 bg-yellow-400">
+      <div class="absolute inset-y-0 right-0 bg-emerald-400 w-12"></div>
+    </div>
     <!-- Span bottom edge -->
-
+    <div class="relative w-32 h-32 mt-4 bg-yellow-400">
+      <div class="absolute inset-x-0 bottom-0 bg-emerald-400 h-12"></div>
+    </div>
     <!-- Display Classes -->
-
+    <div class="text-left">
+      <span class="inline font-bold t">Lorem ipsum dolor</span> sit amet
+      consectetur adipisicing elit. Tempora, sed unde officia eius maxime, illo,
+      itaque <span class="block">deleniti qui repellendus</span>
+      <span class="inline-block italic font-bold">saepe laudantium</span> iusto
+      velit sint repudiandae consequuntur voluptatum doloribus explicabo
+      voluptas aut iste in nemo obcaecati dolorum ad? Expedita, numquam aut.
+    </div>
     <!-- Z-Index -->
-
+    <div class="relative h-24 w-screen">
+      <div class="absolute w-24 h-24 bg-emerald-100 z-10">1</div>
+      <div class="absolute w-24 h-24 bg-emerald-200 left-12 z-0">2</div>
+      <div class="absolute w-26 h-24 bg-emerald-300 left-24 z-20">3</div>
+      <div class="absolute w-24 h-24 bg-emerald-400 left-36 z-0">4</div>
+      <div class="absolute w-24 h-24 bg-emerald-500 left-48 z-0">5</div>
+    </div>
     <!-- Floats -->
+    <div class="w-1/2">
+      <img
+        class="float-right h-48 w-48 m-4"
+        src="../assets/img/img1.jpg"
+        alt="an image"
+      />
+      <p class="text-justify">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi
+        nesciunt maiores ipsum ad quidem, temporibus veritatis nihil amet
+        dolorum eos? Impedit eius sunt corrupti optio, magnam laboriosam esse
+        culpa possimus. Aut provident vero perspiciatis fuga beatae
+        reprehenderit, quas magni recusandae!
+      </p>
+    </div>
   </body>
 </html>
 
